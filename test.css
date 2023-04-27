@@ -1,0 +1,146 @@
+*{
+  position: relative;
+  margin : 0px;
+}
+
+.section2{
+  background-color: var(--White);
+  height: 100svb;    
+  background-image: url(./i);
+  background-position: center;
+  background-repeat: repeat-y;
+  background-position: 0%;
+  background-size: 370%;
+  background-attachment: fixed;
+}
+footer {
+    position: relative;
+    display: flex;
+    background-color:var(--BlueRule);
+    outline: 2px solid black;
+    padding: 2em;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+background-clip:border-box ;
+-webkit-background-clip: content-box;
+
+
+  
+
+}
+footer.social-icon{
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      margin: 10px 0;
+      flex-wrap: wrap;
+
+}
+
+footer ul li a {
+  font-size: 2em;
+  color: var(--White);
+  margin: 0 10px;
+  display: inline;
+  
+}
+footer ul li a :hover{
+  transform: translateY(-10px) scale(120%);
+  transition: 0.5s;
+}
+
+footer .register{
+  color:var(--White );
+  position: relative;
+  display: flex;
+}
+
+footer .wave{
+
+  position: absolute;
+  top: -900px;
+  left: -143px;
+  width: 12200px;
+  height: 100px;
+  background: url(./images/wave-animation2.svg);
+  background-size: 3000px 100%;
+  padding: 30em;
+  outline: 2px solid black;
+  background-repeat: no-repeat;
+  
+
+  background-repeat: repeat-x;
+}
+  footer .wave#wave1{
+    z-index: 1000;
+    opacity: 1;
+    bottom:0;
+    animation: animatewave 8S linear infinite;
+  }
+
+@keyframes animatewave{
+  0%
+  {
+      left: -3000px;
+  }
+  100%
+  {
+      left: 0px;
+  }
+
+}
+footer .wave#wave2{
+  z-index: 999;
+  opacity: 0.5;
+  bottom:10px;
+  animation: animatewave2 8S linear infinite;
+}
+@keyframes animatewave2{
+  0%
+  {
+      left: 0px;
+  }
+  100%
+  {
+      left: -3000px;
+
+}
+
+}
+footer .wave#wave3{
+  z-index: 998;
+  opacity: 0.5;
+  bottom:1200px;
+  animation: animatewave3 16S linear infinite;
+}
+
+@keyframes animatewave3{
+0%
+{
+    left: -3000px;
+}
+100%
+{
+    left: 0px;
+}
+}
+footer .wave#wave4{
+  z-index: 997;
+  opacity: 0.2;
+  bottom:15px;
+  animation: animatewave4 16S linear infinite;
+}
+
+@keyframes animatewave4{
+0%
+{
+    left: 0px;
+}
+100%
+{
+    left: -3000px;
+}
+}
